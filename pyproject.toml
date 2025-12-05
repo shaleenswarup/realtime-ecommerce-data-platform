@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "realtime-ecommerce-data-platform"
+version = "0.1.0"
+description = "Production-style data engineering project with Kafka, Spark, MinIO, Postgres, and Airflow."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.8.0"
+kafka-python = "^2.0.2"
+pyspark = "^3.5.0"
+boto3 = "^1.34.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+black = "^24.4.0"
+isort = "^5.13.2"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
